@@ -1,23 +1,254 @@
 body {
    font-family: 'Raleway', sans-serif;
    font-size: 14px;
+   box-sizing: border-box;
 }
 
 .container {
-   width: 1050px;
+   padding: 0 5px;
+   max-width: 1050px;
    margin: 0 auto;
 }
 
-header {
-   background-color: #000;
-   color: #fff
+.accent {
+   color: #24baa0;
+   font-weight: 700;
 }
 
+/********** Header setion ***********/
+
+
+header {
+   background-color: #000;
+   color: #fff;
+}
+
+h2 {
+   margin-top: 50px;
+   font-size: 22px;
+   color: #575757;
+   text-transform: uppercase;
+}
+
+/********** Banner setion ***********/
+
+
 #baner {
-    background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100 */
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100 */
 background: #ffffff; /* Old browsers */
 background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
 }
+
+.baner_content {
+   position: relative;
+   margin-top: 40px;
+   vertical-align: text-top;
+
+}
+
+.baner_arrow_prew,
+.baner_arrow_next {
+   position: absolute;
+   top: 150px;
+   font-size: 50px;
+}
+
+.baner_arrow_prew {
+   left: 0;
+}
+
+.baner_arrow_next {
+   right: 0;
+}
+
+.baner_image {
+   width: 48%;
+}
+
+.content {
+   width: 45%;
+   padding: 0 30px 0 0;
+   margin-bottom: 50px;
+   text-align: center;
+   display: inline-block;
+   vertical-align: top;
+}
+
+h1 {
+   padding: 45px 0;
+   font-size: 40px;
+   text-transform: uppercase;
+}
+
+.content p {
+   line-height: 1.3rem;
+}
+
+button {
+   background: #24baa0;
+   border: 1px solid #24baa0;
+   border-radius: 8px;
+   color: #fff;
+   font-size: 18px;
+   text-transform: uppercase;
+}
+
+.button-baner {
+   margin: 40px 0;
+   padding: 15px 45px;
+}
+
+/********** Offer setion ***********/
+
+#gall {
+   height: 290px;
+}
+
+.gallery li {
+   margin-top: 30px;
+   width: 330px;
+   height: 230px;
+   border: 1px solid #cdcdcd;
+   display: inline-block;
+}
+
+.gallery li div {
+   box-sizing: border-box;
+   height: 65px;
+   padding: 15px 0 0 15px;
+   margin-top: 150px;
+   background-color: rgba(255, 255, 255, 0.5);
+   font-size: 16px;
+   font-weight: 700;
+}
+
+.row-1 {
+   float: left;
+}
+
+.row-2 {
+   clear: left;
+   margin: 0 27px;
+}
+
+.row-3 {
+   float:right;
+}
+
+.gallery-1 {
+   background-image: url("../images/box1_img.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.gallery-2 {
+   background-image: url("../images/box2_img.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.gallery-3 {
+   background-image: url("../images/box3_img.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+
+/********** Price setion ***********/
+
+#price {
+   background-color: #f1f1f1;
+   height: 1000px;
+   overflow: hidden;
+}
+
+#price .container {
+
+}
+
+.offer > li {
+   width: 330px;
+   height: 450px;
+   border: 1px solid #cdcdcd;
+   display: inline-block;
+   padding: 30px 0;
+   text-align: center;
+   position: relative;
+}
+
+.offer .plan-name {
+   font-size: 26px;
+   color: #27c7ab;
+   text-transform: uppercase;
+}
+
+.offer .price-round {
+   box-sizing: border-box;
+   height: 130px;
+   width: 130px;
+   margin: 30px auto;
+   border: 1px solid #d6d5d5;
+   border-radius: 50%;
+   color: #c2c2c2;
+   display: inline-block;
+   text-transform: uppercase;
+   font-weight: 700;
+}
+
+.offer .price-round-ammount {
+   margin: 30px 0 10px 0;
+   font-size: 45px;
+   font-weight: 700;
+}
+
+.offer .price-round-currency {
+   font-size: 16px;
+}
+
+.offer .uppercase {
+   font-size: 16px;
+   position:relative;
+   bottom: 1.6em;
+}
+
+.price-variants > li {
+   padding: 8px 0;
+   color: #c2c2c2;
+   font-size: 26px;
+}
+
+.price-variants > li:nth-child(2n+1) {
+   background-color: #e4e4e4;
+   color: #939393;
+}
+
+.price-variants > li:nth-child(2n+0) {
+   background-color: #f1f1f1;
+   color: #737373;
+}
+
+.price-button {
+   margin: 0;
+   padding: 0;
+   width: 120px;
+   height: 40px;
+   vertical-align: bottom;
+   font-size: 16px;
+   color: #fff;
+   position: absolute;
+   bottom: 20px;
+   left: 105px;
+
+}
+
+/********** Form setion ***********/
+
+
+
+/********** Footer setion ***********/

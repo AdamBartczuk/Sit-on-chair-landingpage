@@ -26,63 +26,89 @@
          </div>
       </header>
       <section id="baner">
-         <img src="images/black_chair.png" alt="black chair"/>
-         <div class="content">
+         <div class="container baner_content">
+            <span class="baner_arrow_prew accent">&#60;</span>
+            <img src="images/black_chair.png" class="baner_image" alt="black chair"/>
+            <div class="content">
 
-            <h1>sit <span class="accent">on</span> our <span class="accent">chair</span></h1>
+               <h1>sit <span class="accent">on</span> our <span class="accent">chair</span></h1>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
 
-            <button type="button" name="button">zobacz więcej</button>
+               <button class="button-baner" type="button" name="button">zobacz więcej</button>
+            </div>
+            <span class="baner_arrow_next accent">&#62;</span>
          </div>
       </section>
 
-      <section id="offer">
-         <div class="container">
+      <section id="gall" class="container">
             <ul class="gallery">
-               <li>Chair CLAIR</li>
-               <li>Chair MARGARITA</li>
-               <li>Finds all inputs</li>
-            </ul>
-         </div>
+               <li class="gallery-1 row-1"><div ><p>Chair CLAIR</p></div></li>
+               <li class="gallery-2 row-2"><div ><p>Chair MARGARITA</p></div></li>
+               <li class="gallery-3 row-3"><div ><p>Finds all inputs</p></div></li>
 
+            </ul>
       </section>
 
-      <section id="price">
+      <section id="price"  >
          <div class="container">
+
             <h2>cennik</h2>
-            <ul>
-               <li>
-                  <div class="pricelist_element">
-                  basic plan
+            <ul class="offer">
+               <li class="offer-1 row-1">
+                  <p class="plan-name">basic plan</p>
+                  <div class="price-round">
+                     <p class="price-round-ammount">85<span class="uppercase">99</span></p>
+                     <p class="price-round-currency">pln/msc</p>
                   </div>
+                  <ul class="price-variants">
+                     <li>Zakup towaru + dowóz</li>
+                     <li>Serwis</li>
+                  </ul>
+                  <button class="price-button" type="button" name="button">Dołącz</button>
                </li>
-               <li>
-                  <div class="pricelist_element">
-                  Standard plan
+               <li class="offer-2 row-2">
+                  <p class="plan-name">basic plan</p>
+                  <div class="price-round">
+                     <p class="price-round-ammount">85<span class="uppercase">99</span></p>
+                     <p class="price-round-currency">pln/msc</p>
                   </div>
+                  <ul class="price-variants">
+                     <li>Zakup towaru + dowóz</li>
+                     <li>Serwis</li>
+                     <li>Gwarancja 5 lat</li>
+                  </ul>
+                  <button class="price-button" type="button" name="button">Dołącz</button>
                </li>
-               <li>
-                  <div class="pricelist_element">
-                  advanced plan
+               <li class="offer-3 row-3">
+                  <p class="plan-name">basic plan</p>
+                  <div class="price-round">
+                     <p class="price-round-ammount">85<span class="uppercase">99</span></p>
+                     <p class="price-round-currency">pln/msc</p>
                   </div>
+                  <ul class="price-variants">
+                     <li>Zakup towaru + dowóz</li>
+                     <li>Serwis</li>
+                     <li>Gwarancja 6 lat</li>
+                     <li>Porady projektanta</li>
+                  </ul>
+                  <button class="price-button" type="button" name="button">Dołącz</button>
                </li>
-               <li>standard plan</li>
-               <li>advance plan</li>
+            </ul>
             </ul>
          </div>
       </section>
 
       <section id="form">
          <div class="container">
-            <h2>cennik</h2>
+            <h2>kontakt</h2>
             <form class="" action="index.html" method="post">
                <!-- zakres formularza do uzupełnienia -->
             </form>
          </div>
       </section>
 
-      <footer>
+      <footer class="container">
          <p>
             Copyright 2014 | All Rights Reserved - Sit On Chair
          </p>
