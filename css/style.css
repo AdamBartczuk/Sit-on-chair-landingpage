@@ -24,10 +24,21 @@ header {
 }
 
 h2 {
-   margin-top: 50px;
+   margin: 50px 0;
    font-size: 22px;
    color: #575757;
    text-transform: uppercase;
+   position: relative;
+}
+
+h2::after {
+   content: "";
+   width: 200px;
+   height: 5px;
+   background-color: #24baa0;
+   position: absolute;
+   bottom: -10px;
+   left: 0;
 }
 
 /********** Banner setion ***********/
@@ -131,7 +142,7 @@ button {
 
 .row-2 {
    clear: left;
-   margin: 0 27px;
+   margin: 0 24px;
 }
 
 .row-3 {
@@ -164,7 +175,6 @@ button {
 
 #price {
    background-color: #f1f1f1;
-   height: 1000px;
    overflow: hidden;
 }
 
@@ -172,10 +182,15 @@ button {
 
 }
 
+.offer {
+   margin: 70px 0;
+}
+
 .offer > li {
    width: 330px;
    height: 450px;
-   border: 1px solid #cdcdcd;
+   background-color: #f9f9f9;
+   border: 2px solid #cdcdcd;
    display: inline-block;
    padding: 30px 0;
    text-align: center;
@@ -193,6 +208,7 @@ button {
    height: 130px;
    width: 130px;
    margin: 30px auto;
+   background-color: #f9f9f9;
    border: 1px solid #d6d5d5;
    border-radius: 50%;
    color: #c2c2c2;
@@ -247,8 +263,100 @@ button {
 
 }
 
+.offer > li .plan-name::before {
+   position: absolute;
+   left: 140px;
+   top: -35px;
+   content: "";
+   width: 25px;
+   height: 25px;
+   background-color: #d6d5d5;
+   border: solid 12px #fff;
+   border-radius: 50%;
+   box-shadow: 0 0 0 2px #cdcdcd;
+}
+/********** hover efect on pricelist ***********/
+
+.offer > li:hover {
+   background-color: #27c7ab;
+   border-color: #27c7ab;
+   transition: all 0.2s ease-out;
+}
+
+.offer > li:hover .plan-name {
+   color: #fff;
+}
+
+.offer > li:hover .price-round {
+   color: #27c7ab;
+   border-color: #27c7ab;
+}
+
+.offer > li:hover .price-button {
+   background-color: #fff;
+   color: #27c7ab;
+}
+
+.offer > li:hover .plan-name:before {
+   background-color: #fff;
+   border-color: #27c7ab;
+   box-shadow: 0 0 0 2px #27c7ab;
+}
+
 /********** Form setion ***********/
 
+#form {
+   height: 500px;
+}
+
+.form-left {
+   width: 65%;
+   float: left;
+}
+
+input {
+   box-sizing: border-box;
+   margin: 10px 0;
+   border: solid 1px #27c7ab;
+   width: 100%;
+   height: 65px;
+   font-size: 33px;
+   padding: 5px;
+   font-weight: lighter;
+}
+
+input::placeholder {
+   color: #cacaca;
+
+}
+
+.form-message {
+   height: 200px;
+   text-align: left;
+   vertical-align: text-top;
+}
+
+.form-right {
+   width: 35%;
+   float:right;
+}
+
+.form-right .contact-form-image {
+   clear: both;
+   margin: 0 0 0 100px;
+   height: 150px;
+}
+
+.contact-form-checkbox {
+   padding: 20px 30px;
+   color: #aeaeae;
+   font-size: 20px;
+}
 
 
 /********** Footer setion ***********/
+
+
+footer > p {
+   margin: 50px 0;
+}
