@@ -124,16 +124,8 @@ button {
    height: 230px;
    border: 1px solid #cdcdcd;
    display: inline-block;
-}
-
-.gallery li div {
-   box-sizing: border-box;
-   height: 65px;
-   padding: 15px 0 0 15px;
-   margin-top: 150px;
-   background-color: rgba(255, 255, 255, 0.5);
-   font-size: 16px;
-   font-weight: 700;
+   overflow: hidden;
+   position: relative;
 }
 
 .row-1 {
@@ -150,10 +142,21 @@ button {
 }
 
 .gallery-1 {
+   background-color: rgba(255, 255, 255, 0);
+}
+
+.gallery-1::after {
+   content: "";
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   position: absolute;
    background-image: url("../images/box1_img.jpg");
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+   z-index: -1;
 }
 
 .gallery-2 {
@@ -169,6 +172,55 @@ button {
    background-repeat: no-repeat;
    background-size: cover;
 }
+
+.gallery .gallery-title {
+   position: relative;
+   box-sizing: border-box;
+   height: 65px;
+   padding: 15px 0 0 15px;
+   margin-top: 150px;
+   background-color: rgba(255, 255, 255, 0.5);
+   font-size: 16px;
+   font-weight: 700;
+}
+
+.gallery .gallery-title:after {
+   content: "";
+   width: 150px;
+   height: 5px;
+   background-color: #24baa0;
+   position: absolute;
+   bottom: 25px;
+   left: 15px;
+}
+
+.gallery > li:hover {
+   transition: all 0.2s ease-out;
+   background-color: rgba(255, 255, 255, 0.8);
+}
+
+.gallery > li:hover .gallery-title {
+   margin-top: 0;
+   background-color: rgba(255, 255, 255, 0.0);
+   transition: all 0.2s ease-out;
+}
+
+.gallery > li:hover .gallery-content-hidden {
+   display: inline-block;
+   opacity: 100;
+   transition: all 0.2s ease-out;
+   transition-delay: 1s;
+
+}
+
+.gallery .gallery-content-hidden {
+   padding: 0 15px 0 15px;
+   line-height: 1.5em;
+   color: #575757;
+   display: none;
+   opacity: 0;
+}
+
 
 
 /********** Price setion ***********/
