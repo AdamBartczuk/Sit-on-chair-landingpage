@@ -41,6 +41,19 @@ h2::after {
    left: 0;
 }
 
+nav {
+   text-decoration: none;
+   list-style: none;
+   color: white;
+}
+
+.main_nav {
+   text-transform: uppercase;
+
+}
+
+
+
 /********** Banner setion ***********/
 
 
@@ -141,36 +154,33 @@ button {
    float:right;
 }
 
-.gallery-1 {
+.gallery-1, .gallery-2, .gallery-3  {
    background-color: rgba(255, 255, 255, 0);
 }
 
-.gallery-1::after {
+li[class*="gallery"]::after {
    content: "";
    left: 0;
    right: 0;
    top: 0;
    bottom: 0;
    position: absolute;
-   background-image: url("../images/box1_img.jpg");
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
    z-index: -1;
 }
 
-.gallery-2 {
-   background-image: url("../images/box2_img.jpg");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
+.gallery-1::after {
+   background-image: url("../images/box1_img.jpg");
 }
 
-.gallery-3 {
+.gallery-2::after {
+   background-image: url("../images/box2_img.jpg");
+}
+
+.gallery-3::after {
    background-image: url("../images/box3_img.jpg");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
 }
 
 .gallery .gallery-title {
